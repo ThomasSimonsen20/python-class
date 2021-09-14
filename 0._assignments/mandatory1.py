@@ -1,3 +1,5 @@
+import datetime
+
 """ 
 1. Model an organisation of employees, management and board of directors in 3 sets.
 
@@ -40,6 +42,8 @@ a = {'a': 'Alpha', 'b' : 'Beta', 'g': 'Gamma'}
 
 listOfTuples = [x for x in a]
 
+print(a)
+
 ######################################################################################
 
 """ 
@@ -72,3 +76,11 @@ Translate the month, correct the year to include all of the digits.
 
 The function will accept a date in the "dd-MMM-yy" format and respond with a tuple of ( y , m , d ). 
 """
+
+def convertDate(date):
+    newDate = date.split("-")
+    month_number = datetime.datetime.strptime(newDate[1], '%b').month
+    return (newDate[2], month_number, newDate[0])
+
+
+print(convertDate('2-jan-91'))
