@@ -42,7 +42,7 @@ a = {'a': 'Alpha', 'b' : 'Beta', 'g': 'Gamma'}
 
 listOfTuples = [x for x in a]
 
-print(a)
+print(listOfTuples)
 
 ######################################################################################
 
