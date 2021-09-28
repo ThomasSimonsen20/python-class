@@ -1,0 +1,5 @@
+vim script.py
+//laver et py script.
+
+docker run -it --rm -v dollartegn{PWD}:/docs python bash
+

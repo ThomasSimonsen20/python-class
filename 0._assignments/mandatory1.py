@@ -40,7 +40,7 @@ print(employees.difference(management).difference(directors))
 
 a = {'a': 'Alpha', 'b' : 'Beta', 'g': 'Gamma'}
 
-listOfTuples = [x for x in a]
+listOfTuples = [x for x in a.items()]
 
 print(listOfTuples)
 
@@ -82,5 +82,4 @@ def convertDate(date):
     month_number = datetime.datetime.strptime(newDate[1], '%b').month
     return (newDate[2], month_number, newDate[0])
 
-
-print(convertDate('2-jan-91'))
+print(convertDate('2-dec-91'))
