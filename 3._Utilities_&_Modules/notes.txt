@@ -1,0 +1,33 @@
+docker run -it --rm -v ${PWD}:/docs python bash
+//-it = terminal access
+//--rm fjern container når man lukker terminalen
+//-v = et volume, en forbindelse??
+//python = et image
+//{PWD} = print working directory.
+//:/docs = laver en mappe der hedder docs, med de filer i den mappe du køre docker fra.
+//bash = ??
+
+//laver bare en container med et python image.
+//vi bruger docker så vi alle i klassens har samme arbejdsmiljø.
+//alle filer vi gemmer i vores container, bliver også gemt på vores egen pc.
+
+//'pip list' i terminal viser moduler installeteret.
+//bruger pip install requests.
+
+//pip install -r requirements.txt 
+//-r = recrusive
+//requirements er ens modules man har installeteret.
+
+//pip freeze > requirements.txt
+//tager alt fra pip list ind i din textfil, du kan installere fra når du starter ny container.
+
+//for at lave en fil
+
+//lav dockerfile
+//docker build . --tag imports //for at lave images, ud fra den dockerfile. OFC..
+//docker run -it --rm imports (enkelt måde)
+//docker run -it --rm -v ${PWD}:/docs imports
+
+//docker build -t imageName . //anden måde at lave image ud Dockerfile
+docker run -dp 3000:3000 imageName //-d = detached, -p = port
+

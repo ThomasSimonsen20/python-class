@@ -1,0 +1,19 @@
+1. Have an overview of how this elective is structured, and what you can expeted to learn during this semester.
+2. Have a basic understanding of a python development enviroment, and know how to use it.
+3. Be able to control your computer through its command line.
+4. Be able to work with python strings, conditions and functions.
+5. Work with lists, tuples
+6. Loop over sequences with a for, foreach & while loops.
+7. Sort sequences using the build in sorted function and use its key parameter to perform custom sorting.
+8. Read from files and write to files using the build in “open” function.
+9. Use List comprehensions instead of list assignment and loops in you python code.
+10. Create your own modules.
+11. Use python build in modules.
+12. Find and use 3rd party modules.
+13. Use the requests module to fetch website data.
+14. search a document for patterns.
+15. Use python build in modules.
+16. Find and use 3rd party modules.
+17. Save and Share your modules installed in a docker container.
+18. work with markdown documents.
+19. Work with the module BeautifullSoup for webscrabing.

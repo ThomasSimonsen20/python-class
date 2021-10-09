@@ -6,9 +6,11 @@ import sys
 # python script.py [-it]{--rm} where the [] means required and the {} means optional.
 
 def main(argv):
-    if argv[1] != '-it':
+    if len(argv) == 1:
+        print('Usage: python 0._ex4.py [-it][--rm]')
+    elif argv[1] != '-it':
         print('Usage: python 0._ex4.py [-it]{--rm}')
-    if len(argv) == 3 and argv[2] != '--rm':
+    elif len(argv) == 3 and argv[2] != '--rm':
         print('Usage: python 0._ex4.py [-it]{--rm}')
     elif len(argv) == 3 and argv[2] == '--rm':
         print('WTF IS HAPPENING')
@@ -17,5 +19,7 @@ def main(argv):
 
     sys.exit
 
-main(sys.exit)    
+main(sys.argv)  
+
+  
 
