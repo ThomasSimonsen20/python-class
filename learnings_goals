@@ -1,6 +1,9 @@
 1. Have an overview of how this elective is structured, and what you can expeted to learn during this semester.
 2. Have a basic understanding of a python development enviroment, and know how to use it.
+    Det f.eks. at vi arbejder i docker for at alle i klassen har samme arbejdsmiljø, og at vi kan de forskellige commands,
+    ls, cd, mkdir osv..
 3. Be able to control your computer through its command line.
+    same med de forskellige commands.
 4. Be able to work with python strings, conditions and functions.
 5. Work with lists, tuples
 6. Loop over sequences with a for, foreach & while loops.
@@ -17,3 +20,4 @@
 17. Save and Share your modules installed in a docker container.
 18. work with markdown documents.
 19. Work with the module BeautifullSoup for webscrabing.
+    BeautifullSoup er et python library som bliver brugt til at hente data ud af HTML og XML filer.
