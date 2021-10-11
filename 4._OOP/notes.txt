@@ -1,0 +1,37 @@
+Alt i python er et object. ikke primative datatyper som i java.
+Der skal være noget i en class, f.eks. pass
+
+python -i classes.py (bliver åbnet i intropetar), man kan derefter lave ting i klassen derefter.
+F.eks. p = Person(), så er der lavet en Person object.
+
+Når man er inde i en klasse, så er def en metode, ellers kalder man dem en function.
+def __init__(self):
+def er en metode, og man skal give self med som parameter i en metode.
+__init__ metode, fungere som en constructer vi kender fra java.
+def __init__(self, *args):
+*randomNavn(args som default), så kan man få flere parameter med når man laver det object.
+
+
+hvis en metode har __, så er det ikke en metode man skal kalde direkte.
+
+Kan ændre class varaible for alle objecter, ved at sige Person.type = osv..
+
+hvis man laver p1.type = 'Fish', så er der lavet ny instance variable, men man har ikke ændret på class viarable, eller man har overrullet.
+Når man laver en instance variable med samme navn som class variable, så bliver den overwritet.
+
+p.__dict__, skriver p's objecter ud.
+
+class Student(Person)
+Så arver man alt fra Person, ligesom extend fra jAva
+Man kan arve fra så mange klasser man har lyst til i python.
+
+
+bank opgave
+
+bank = Bank()
+bank.accounts.append(Account())
+bank.accounts[0].accountNumber
+bank.accounts.append(Account(213123), Customer('Thomas'))
+bank.accounts[0].cust.name
+
+

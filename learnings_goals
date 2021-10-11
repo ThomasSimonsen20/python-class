@@ -21,3 +21,8 @@
 18. work with markdown documents.
 19. Work with the module BeautifullSoup for webscrabing.
     BeautifullSoup er et python library som bliver brugt til at hente data ud af HTML og XML filer.
+20. create Classes, Objects, instance and class variables, methods and initializer methods.
+21. make use of single and multiple inheritance.
+22. explain when and why to use classes and objects instead of procedural style.
+23. relate the pythonic OOP style to other languages (Java e.g)
+    Minder meget om Java, vi har __init__ vi bruger som constructor, og laver objecter ligesom vi gør i java.
