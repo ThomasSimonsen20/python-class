@@ -6,23 +6,36 @@
     same med de forskellige commands.
 4. Be able to work with python strings, conditions and functions.
 5. Work with lists, tuples
+    list = []
+    tuple = ()
+    list er som et array, tuple er ligesom const i node.js, Kan ikke ændres. 
+    Så list er gode til hvis man skal ændre, slette og insert, tuple er hurtigt til at access dens elements.
 6. Loop over sequences with a for, foreach & while loops.
+    loops som vi kender, for loop hedder (for x in listNavn): osv..
 7. Sort sequences using the build in sorted function and use its key parameter to perform custom sorting.
+    list.sort(), man kan derefter bruge key=sortSecond f.eks. hvor den bliver anden værdi, kan også sige reverse=true, så den kører baglæns. 
 8. Read from files and write to files using the build in “open” function.
 9. Use List comprehensions instead of list assignment and loops in you python code.
+    minder om loops -> listOfTuples = [x for x in a.items()]
 10. Create your own modules.
 11. Use python build in modules.
+     Der kan vi bare sige import og navnet på den module vi vil bruge, f.eks. sys.
 12. Find and use 3rd party modules.
+     Der ligger masser modules man kan finde, hvorefter vi så ville bruge pip til at installere dem. Kan importes på samme måde eller, 
+     from bs4 import BeautifulSoup
 13. Use the requests module to fetch website data.
+     Super let, vi importer requests, hvorefter vi kan sige requests.get(URL), hvorefter vi har alt html data fra den side.
 14. search a document for patterns.
-15. Use python build in modules.
-16. Find and use 3rd party modules.
-17. Save and Share your modules installed in a docker container.
-18. work with markdown documents.
-19. Work with the module BeautifullSoup for webscrabing.
-    BeautifullSoup er et python library som bliver brugt til at hente data ud af HTML og XML filer.
-20. create Classes, Objects, instance and class variables, methods and initializer methods.
-21. make use of single and multiple inheritance.
-22. explain when and why to use classes and objects instead of procedural style.
-23. relate the pythonic OOP style to other languages (Java e.g)
-    Minder meget om Java, vi har __init__ vi bruger som constructor, og laver objecter ligesom vi gør i java.
+15. Save and Share your modules installed in a docker container.
+     Når vi er i en docker container, kan vi installere de modules vi gerne vil med pip, vi kan lave en requirements.txt, hvorefter vi kan sige 
+     (pip freeze > requirements.txt), som tager alle dine installeret moduler og ligger ind i den requirements.txt fil, derefter kan vi hver gang 
+     vi åbner en ny docker container bare sige pip install -r requirements.txt, får at få downloadet alle de moduler vi skal bruge.
+16. work with markdown documents.
+17. Work with the module BeautifullSoup for webscrabing.
+     BeautifullSoup er et python library som bliver brugt til at hente data ud af HTML og XML filer.
+18. create Classes, Objects, instance and class variables, methods and initializer methods.
+     ref(4._OOP/notes.txt), masser noter på det punkt. :)
+19. make use of single and multiple inheritance.
+20. explain when and why to use classes and objects instead of procedural style.
+21. relate the pythonic OOP style to other languages (Java e.g)
+     Minder meget om Java, vi har __init__ vi bruger som constructor, og laver objecter ligesom vi gør i java.
