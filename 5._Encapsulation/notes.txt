@@ -1,0 +1,18 @@
+Man kan godt have flere __init__ metoder, men den vil altid kun være den sidste der er gældene, da den overskriver dem.
+
+I python bruger man ikke getter og setter, vi laver bare attributterne public.
+
+#p = Person('Claus')
+#p.name = public variable.
+#p2 = Person('Anna')
+#p3 = p.name + p2.name
+p3 = p.name + p2.name = god syntax i python.
+p4.name = p3.name + p2.name
+
+self.__age er en privat variable.
+Man skal lave getter og setter hvis man laver en privat variable som her.
+Men man benytter det vist ikke rigtigt.
+
+def = define
+
+Man laver kun getter og setter i python hvis man laver checks.

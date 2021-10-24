@@ -1,7 +1,20 @@
 
 class Bank():
     def __init__(self):
-        self.accounts = []
+        self.__accounts = []
+    
+    @property
+    def accounts(self):
+        return self.__accounts
+    
+    @accounts.setter
+    def accounts(self, acc):
+        if type(acc) is int:
+            self.__accounts.append(acc)
+        elif type(acc) in [tuple, list]:
+            for i in acc:
+                self.__accounts.append(i)
+        
 
 class Account:
     

@@ -1,0 +1,6 @@
+b = bank()
+b.accounts = 1234
+b.accounts = 2345
+b.accounts er så [1234, 2345]
+
+

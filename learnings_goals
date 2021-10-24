@@ -39,3 +39,8 @@
 20. explain when and why to use classes and objects instead of procedural style.
 21. relate the pythonic OOP style to other languages (Java e.g)
      Minder meget om Java, vi har __init__ vi bruger som constructor, og laver objecter ligesom vi gør i java.
+22. Understand the pythonic approach to encapsulation.
+23. Use private and public attributes in your code
+24. Explain what is meant by private in python
+25. Work with properties to use encapsulation.
+26. And explain the pros and cons of properties and public attributes compared to Java´s private attributes with getters and setters.
