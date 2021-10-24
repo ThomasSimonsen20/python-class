@@ -41,6 +41,8 @@
      Minder meget om Java, vi har __init__ vi bruger som constructor, og laver objecter ligesom vi gør i java.
 22. Understand the pythonic approach to encapsulation.
 23. Use private and public attributes in your code
+     som udgangspunkt laver vi alt public i python, vi laver kun getter og setter hvis vi har checks i vores setter metode, altså hvis der er conditions..
 24. Explain what is meant by private in python
 25. Work with properties to use encapsulation.
+     properties i python er ligesom setter og getter i java, @property er vores getter, @navn.setter er vores setter metode.
 26. And explain the pros and cons of properties and public attributes compared to Java´s private attributes with getters and setters.
