@@ -1,0 +1,21 @@
+python -i fil.py for at køre i intrepeter. HUSK DET.
+
+a = class() // () er top level syntax/functions, så kalder den ens init metode i den class man instistere.
+Så hver gang vi kalder en init metode er det top level syntax. også hvis vi kalder vores __len__ metode.
+
+Hvis man skal bruge len på et object vi selv laver skal vi lave def __len__
+
+__add__ er ikke en buildin function, men vi kan stadig bruge den som top level function.
+
+self er et helt normalt parameter navn, så det kan godt være noget andet, men det er 100% standarden.
+
+__repr__ er en toString metode som vi kender i java.
+__str__ er den anden del af python toString metoder?
+
+
+Deckofcards:
+d = Deck()
+d[-1, 0, 2] osv..
+for i in d:
+    print(i)
+simple forloop skriver alle kortne ud.

@@ -46,3 +46,4 @@
 25. Work with properties to use encapsulation.
      properties i python er ligesom setter og getter i java, @property er vores getter, @navn.setter er vores setter metode.
 26. And explain the pros and cons of properties and public attributes compared to Java´s private attributes with getters and setters.
+27. Create your own classes, that behave like any other Python Object, and are able to interact with pythons build in functions.
