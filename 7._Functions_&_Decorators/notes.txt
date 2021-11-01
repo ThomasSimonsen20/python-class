@@ -1,0 +1,3 @@
+$ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/work jupyter/datascience-notebook 
+- For at køre med jupyter. jupyter notebook is a web applicationi that allows you to create and share documents.
+- Så tror kun vi bruger jupyter til at lettere vise python kode?
