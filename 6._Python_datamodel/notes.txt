@@ -19,3 +19,11 @@ d[-1, 0, 2] osv..
 for i in d:
     print(i)
 simple forloop skriver alle kortne ud.
+
+A() -> __init__(self)
++ -> __add__(self)
+a[] -> __getitem__(self)
+
+len() -> __len__(self)
+str() -> __str__(self)
+dir() -> __dir__(self)

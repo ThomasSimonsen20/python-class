@@ -1,3 +1,56 @@
 $ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/work jupyter/datascience-notebook 
 - For at køre med jupyter. jupyter notebook is a web applicationi that allows you to create and share documents.
 - Så tror kun vi bruger jupyter til at lettere vise python kode?
+
+Decorators:
+- Decorators provide a simple syntax for calling higher-order functions.
+- A decorator is a fucntion that takes another fucntion and extends the behavior of the latter function without explicitly modifying it. 
+- Put simply: decorators wrap a function, modifying its behavior.
+- You can use @ to call your decorators.
+
+
+
+Functions:
+- First-class objects in python functions are first-class objects.
+This means that functions can be passed around and used as arguments, just like any other object.
+
+- Inner functions er fucntions inde i en parent function. 
+Inner functions have many uses, most notably as closure factories and decorator functions.
+
+*args, **kwargs gør at ens decorator kan tage flere argumenter.
+
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+def say_whee():
+    print("Whee!")
+
+say_whee = my_decorator(say_whee)
+
+Can you guess what happens when you call say_whee()? Try it:
+
+>>> say_whee()
+Something is happening before the function is called.
+Whee!
+Something is happening after the function is called.
+
+The so-called decoration happens at the following line:
+say_whee = my_decorator(say_whee)
+
+----BEDRE SYNTAX ----
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_whee():
+    print("Whee!")
+

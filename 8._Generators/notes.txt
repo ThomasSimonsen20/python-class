@@ -1,0 +1,4 @@
+yield keyword gør det er en generator
+print next() får at få næste data i ens liste
+generators har bedre performance når det kommer til større opgaver. Fordi de ikke bliver gemt i memory.
+Når man laver et generator object, så laver den et object der er klar til at blive kaldt næste på, men man får altså en af gangen, så man sparre en masse performance.
