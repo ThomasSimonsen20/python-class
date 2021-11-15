@@ -1,0 +1,3 @@
+Context managers, gør så vores functioner og methoder køre i den rigtige ordre.
+
+læs lige op på yield igen tak..
