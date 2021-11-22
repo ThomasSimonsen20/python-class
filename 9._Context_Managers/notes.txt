@@ -1,3 +1,6 @@
 Context managers, gør så vores functioner og methoder køre i den rigtige ordre.
 
-læs lige op på yield igen tak..
+læs lige op på yield igen tak.
+
+yield sikre at vores kører i den rigtige order vi gerne vil ha den til at gøre i.
+Så hvis vi har yield mellem first() og second() så sikre vi at second() først bliver kørt efter first()
