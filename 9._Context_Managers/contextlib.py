@@ -20,3 +20,4 @@ with connect('school.db') as conn:
     for i in cur.execute('SELECT * FROM students'):
         print(i)
 
+#test
