@@ -1,13 +1,13 @@
-
 from sqlite3 import connect
 from contextlib import contextmanager
-
 
 @contextmanager
 def temptable(cur):
     cur.execute('CREATE TABLE students(id int PRIMARY KEY, name text, cpr text)')
-    yield
-    cur.execute('DROP TABLE students')
+    try:
+        yield
+    finally:
+        cur.execute('DROP TABLE students')
 
 
 with connect('school.db') as conn:
@@ -17,7 +17,7 @@ with connect('school.db') as conn:
         cur.execute('INSERT INTO students(id, name, cpr) VALUES (2, "Julie", "111111-1111")')
         cur.execute('INSERT INTO students(id, name, cpr) VALUES (3, "Hannah", "222222-2222")')
 
-    for i in cur.execute('SELECT * FROM students'):
-        print(i)
+        for i in cur.execute('SELECT * FROM students'):
+            print(i)
 
 #test
