@@ -1,0 +1,37 @@
+pip install requests, Pendulum.
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+
+Dockerfile:
+FROM python er python version
+# the base image
+FROM python:3.8-alpine
+
+# copy all files from dir with Dockerfile and requirements.txt to /app folder in image
+COPY . /app
+
+# cd into /app folder with (in this case only) the requirements.txt
+WORKDIR /app
+
+# install python modules
+RUN pip install -r requirements.txt
+
+# Change into / as startingpoint of container
+WORKDIR /
+
+# when container runs it should start in a ash terminal
+CMD ["ash"]
+
+
+docker build . --tag imagename
+docker run -it --rm -v ${PWD}:/docs imagename
+
+MARKUP
+Markup is what HTML tags do to the text inside of them; they mark it as a specific type of text. 
+For example, markup text could come in the form of boldface or italicized type to draw specific attention to a word or phrase
+
+
+soup.find_all("a", class_="element")
+soup.get_text()
