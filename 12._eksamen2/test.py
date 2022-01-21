@@ -5,7 +5,7 @@
 
 
 
-class Person(object):
+class Person:
        
     # Constructor
     def __init__(self, name):
