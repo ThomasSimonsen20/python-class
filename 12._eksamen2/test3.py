@@ -1,4 +1,3 @@
-
 class Person:
     
     def __init__(self, name):
@@ -13,11 +12,11 @@ class Person:
     
     @name.setter
     def name(self, name):
-        if type(name) != str:
-            print("Please type a actual name")
-        else:
+        if isinstance(name, str):
             self._name = name
-    
+        else:
+            print("Please type a actual name")
+
 class Employee(Person):
 
     def isEmployee(self):

@@ -1,16 +1,25 @@
 def myFunction(**kwargs):
-    return "Firstname: " + kwargs["fname"] + " Lastname: " + kwargs["lname"]
+    #print(name)
+    return "Firstname " + kwargs["fname"] + " Lastname: " + kwargs["lname"]
+    
 
 print(myFunction(fname = "Thomas", lname = "Simonsen"))
 
-#list
+
+#Set
+{}
+# add og remove
+
+#Tuple
+()
+#len og type
+
+#Dictionary
+{}
+# .keys .values 
+
+#List
 []
 
-#tuple
-()
+#insert pop remove append
 
-#dictionary
-{}
-
-#set
-{}
