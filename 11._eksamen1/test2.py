@@ -1,16 +1,22 @@
 def myFunction(**kwargs):
-    return "Firstname: " + kwargs["fname"] + " Lastname: " + kwargs["lname"]
+    #return
+    print("Firstname: " + kwargs["fname"] + " Lastname: " + kwargs["lname"])
 
-#print(myFunction(fname = "Thomas", lname = "Simonsen"))
+myFunction(fname = "Thomas", lname = "SImonsen")
 
-#List
-fruits = ["apple", "banana", "orange", "pineapple"]
 
-#Tuple
-tupleFruits = ("apple", "banana", "orange", "pineapple")
+#SET
+{}
+# add og remove
 
-#Dictionary
-dic = {"fname": "Thomas", "lname": "Simonsen", "age": 25}
+#TUPLE
+()
+# len(tuple), type(tuple), max(tuple), min(tuple)
 
-#Sets
-myset = {"apple", "pineapple", "orange"}
+#DICTIONARY
+x = {"fname": "THomas", "lname": "Simonsen"}
+# .keys() .values() x["age"] = 21? .update({})
+
+#LIST
+[]
+# insert, append, pop, remove

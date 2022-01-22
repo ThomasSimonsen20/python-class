@@ -12,7 +12,7 @@ class Person:
         self.name = name
    
     # To get name
-    #def getName(self):
+    # getName(self):
     #    return self.__name #private virable når man bruger normal getter og setter
    
     # To check if this person is an employee
