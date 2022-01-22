@@ -6,6 +6,6 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-WORKDIR /
+WORKDIR / 
 
 CMD ["ash"]
